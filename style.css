@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+ul{
+    all: unset;
+}
+
 .gridContainer{
     height: 100vh;
     display: grid;
@@ -10,7 +14,7 @@ body{
     border: 0;
 }
 
-div{
+div, ul{
     border: 1px solid black;
 }
 
@@ -32,7 +36,8 @@ div{
 
 .leftWrapper>*{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .logo{
