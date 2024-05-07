@@ -15,7 +15,7 @@ ul, li{
     height: 100vh;
     display: grid;
     grid-template-columns: 1.2fr 5fr 1fr;
-    grid-template-rows: 1.2fr 5fr;
+    grid-template-rows: 1.5fr 5fr;
     border: 0;
 }
 
@@ -30,7 +30,7 @@ ul, li{
 .leftWrapper{
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 75%;
     padding: 20px;
     justify-content: space-between;
 }
@@ -64,7 +64,6 @@ ul, li{
 
 .leftMain{
     height: 22rem;
-    padding-top: 1rem;
 }
 
 .leftMain>*, .leftExtras>*{
@@ -73,8 +72,13 @@ ul, li{
     align-items: flex-end;
     gap: .5rem;
     display: flex;
+    cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
+.leftMain>*:hover, .leftExtras>*:hover{
+    transform: scale(1.1);
+}
 .leftExtras{
     height: 10rem;
     padding-top: 1rem;
@@ -82,4 +86,45 @@ ul, li{
 
 .header{
     grid-column: 2 / 4;
+    box-shadow: 0px 6px 6px 0px rgba(194,194,194,1);
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBarWrapper, .searchBarWrapper>*, .headerMain{
+    border: 1px solid black;
+}
+
+.searchBarWrapper{
+    flex: 1.2;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 1.25rem;
+}
+
+.searchBarProfile{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.searchBarProfile>*{
+    width: 50px;
+    border: 1px solid black;
+}
+
+.searchBarContainer{
+    margin-left: 2rem;
+    width: 60%; 
+    margin-right: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: .5rem;
+}
+
+.headerMain{
+    flex: 2;
 }
