@@ -19,10 +19,6 @@ ul, li{
     border: 0;
 }
 
-div, ul{
-    border: 1px solid black;
-}
-
 .leftBar{
     grid-row: 1 / 3;
     display: flex;
@@ -34,7 +30,7 @@ div, ul{
 .leftWrapper{
     display: flex;
     flex-direction: column;
-    height: 65%;
+    height: 70%;
     padding: 20px;
     justify-content: space-between;
 }
@@ -42,8 +38,7 @@ div, ul{
 .leftWrapper>*{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 1.5rem;
+    justify-content: flex-start;
     gap: 1.5rem;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: white;
@@ -52,18 +47,37 @@ div, ul{
 .logo{
     height: 3rem;
     font-size: clamp(1rem, 2vw + 0.25rem, 2rem);
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logoImage{
+    width: 20%;
+    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(101deg) brightness(115%) contrast(100%);
+}
+
+.sideImage{
+    width: 15%;
+    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(101deg) brightness(115%) contrast(100%);
 }
 
 .leftMain{
     height: 22rem;
+    padding-top: 1rem;
 }
 
 .leftMain>*, .leftExtras>*{
     font-size: clamp(1rem, 1.5vw + 0.125rem, 1.75rem);
+    flex-direction: row;
+    align-items: flex-end;
+    gap: .5rem;
+    display: flex;
 }
 
 .leftExtras{
     height: 10rem;
+    padding-top: 1rem;
 }
 
 .header{
