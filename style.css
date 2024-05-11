@@ -24,7 +24,7 @@ ul, li{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: #03AED2;
+    background-color: #128ECEff;;
 }
 
 .leftWrapper{
@@ -52,14 +52,16 @@ ul, li{
     gap: .5rem;
 }
 
+.logoImage, .sideImage{
+    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(101deg) brightness(115%) contrast(100%);
+}
+
 .logoImage{
     width: 20%;
-    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(101deg) brightness(115%) contrast(100%);
 }
 
 .sideImage{
     width: 15%;
-    filter: invert(100%) sepia(0%) saturate(7433%) hue-rotate(101deg) brightness(115%) contrast(100%);
 }
 
 .leftMain{
@@ -123,6 +125,20 @@ ul, li{
     padding: 10px;
     align-items: center;
     gap: .5rem;
+}
+
+.searchImage{
+    width: 3%;
+}
+
+.searchBar{
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: .25rem;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, .5vw + 0.1rem, 1.25rem);
+    background-color: #E3E9F0ff;
 }
 
 .headerMain{
