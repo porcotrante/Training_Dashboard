@@ -16,7 +16,6 @@ ul, li{
     display: grid;
     grid-template-columns: 1.2fr 5fr 1fr;
     grid-template-rows: 1.5fr 5fr;
-    border: 0;
 }
 
 .leftBar{
@@ -93,14 +92,16 @@ ul, li{
     flex-direction: column;
 }
 
-
-
-.searchBarWrapper{
+.searchBarWrapper, .headerMain{
     flex: 1.2;
     display: flex;
     justify-content: space-around;
     padding: 10px;
     gap: 1.25rem;
+}
+
+.searchBarWrapper{
+    flex: 1.2;
 }
 
 .searchBarProfile{
@@ -151,4 +152,35 @@ ul, li{
 
 .headerMain{
     flex: 2;
+    align-items: center;
+}
+
+.headerMainGridContainer{
+    width: 30%;
+    height: 70%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    margin-left: 2.725rem;
+    margin-right: auto;
+}
+
+.headerMainGridElement{
+    border: 1px solid black;
+}
+
+.headerMainButtonContainer{
+    width: 30%;
+    height: 40%;
+    border: 1px solid black;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerMainButton{
+    height: 100%;
+    width: 20%;
+    border: 1px solid black;
 }
