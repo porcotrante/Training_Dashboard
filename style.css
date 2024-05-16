@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-ul, li{
+ul, li, p, button{
     all: unset;
 }
 
@@ -141,7 +141,6 @@ ul, li{
     border: 1px solid black;
     width: 3.5rem;
     height: 3.5rem;
-    background-image: url(./images/russian-blue-7618223_1280.jpg);
     background-size: contain;
 }
 
@@ -158,7 +157,6 @@ ul, li{
 .headerMainGridContainer{
     width: 30%;
     height: 70%;
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 3fr;
@@ -166,14 +164,21 @@ ul, li{
     margin-right: auto;
 }
 
-.headerMainGridElement{
-    border: 1px solid black;
+.headerMainGridText{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.headerMainGridImage{
+    grid-row: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .headerMainButtonContainer{
     width: 30%;
     height: 40%;
-    border: 1px solid black;
     margin-right: 4rem;
     display: flex;
     justify-content: space-between;
@@ -182,5 +187,17 @@ ul, li{
 .headerMainButton{
     height: 100%;
     width: 20%;
-    border: 1px solid black;
+    color: white;
+    background-color: #1795D5ff;
+    border-radius: 40px;
+    padding: .5rem;
+    text-align: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.headerMainButton:hover{
+    opacity: .5;
 }
