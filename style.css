@@ -29,7 +29,7 @@ ul, li, p, button, input{
 .leftWrapper{
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 65%;
     padding: 20px;
     justify-content: space-between;
 }
