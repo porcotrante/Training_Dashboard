@@ -320,7 +320,7 @@ ul, li, p, button, input{
     display: grid;
     height: 20%;
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin-right: auto;
     grid-template-columns: 2fr 5fr;
     grid-template-rows: 1fr 1fr;
 }
