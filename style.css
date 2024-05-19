@@ -29,7 +29,7 @@ ul, li, p, button, input{
 .leftWrapper{
     display: flex;
     flex-direction: column;
-    height: 65%;
+    height: 60%;
     padding: 20px;
     justify-content: space-between;
 }
@@ -321,11 +321,6 @@ ul, li, p, button, input{
     height: 20%;
     width: 80%;
     margin: 0 auto 0 auto;
-    border: 1px solid black;
     grid-template-columns: 2fr 5fr;
     grid-template-rows: 1fr 1fr;
-}
-
-.rightGridContainer>*{
-    border: 1px solid black;
 }
